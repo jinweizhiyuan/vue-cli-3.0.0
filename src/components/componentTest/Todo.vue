@@ -2,11 +2,11 @@
   <ul class="news">
     <li v-for="item in news" v-bind:key="item.id">
         <input type="checkbox" @change="changeState(item)" :checked="item.del" />
-        <del v-if="item.del">
-            {{ item.name }}
+        <del v-if="item.del" v-htmlmm="item.name">
+            
         </del>
-        <span v-else>
-          {{ item.name }}
+        <span v-else v-text="item.name"> 
+          
         </span>
     </li>
   </ul>
