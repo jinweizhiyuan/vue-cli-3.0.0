@@ -17,6 +17,9 @@ export default {
 </script>
 
 <style>
+body {
+  background:transparent url("./assets/bg.jpg") no-repeat left top;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

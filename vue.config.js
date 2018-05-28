@@ -4,14 +4,13 @@ module.exports = {
             alias: {
                 'vue$': 'vue/dist/vue.esm.js'
             }
-        },
+        }
+        // ,
         // module: {
         //     rules: [{
-        //         test: /\.styl$/,
+        //         test: /\.(.jpg|jpeg|png|svg|gif)$/,
         //         use: [
-        //             { loader: 'style-loader' },
-        //             { loader: 'css-loader', options: { sourceMap: "true" } },
-        //             { loader: 'stylus-loader' }
+        //             { loader: 'url-loader' , options: {limit:512}}
         //         ]
         //     }]
         // }
